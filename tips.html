@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clean Our Community | Sustainable Living Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CleanOurCommunity</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="tips.html" class="active">Tips</a>
+      <a href="map.html">Map</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="contact.html">Pledge</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      ☀️/🌙
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Sustainable Living Starts With Small Choices</h1>
+        <p>Use these tips to reduce waste at home, on campus, and in the dining hall.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="grid-3">
+        <article class="card">
+          <h2>On Campus</h2>
+          <ul>
+            <li>Carry a reusable water bottle instead of buying plastic.</li>
+            <li>Use refill stations and recycling bins around ULM.</li>
+            <li>Print only when necessary; use digital notes.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>At Home</h2>
+          <ul>
+            <li>Separate recyclables from regular trash.</li>
+            <li>Turn off lights and unplug chargers when not in use.</li>
+            <li>Bring reusable bags for grocery shopping.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>In Schulze Dining Hall</h2>
+          <ul>
+            <li>Take only what you can eat to reduce food waste.</li>
+            <li>Try smaller portions first, then go back if you’re still hungry.</li>
+            <li>Use reusable mugs or cups when possible.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section quiz-section">
+      <h2>Quick Recycling Quiz</h2>
+      <p>Test your knowledge! Click the best answer for each question.</p>
+
+      <div id="quiz">
+        <div class="quiz-question" data-answer="b">
+          <p>1. Which of these items is usually recyclable on campus?</p>
+          <label><input type="radio" name="q1" value="a" /> Pizza box soaked in grease</label>
+          <label><input type="radio" name="q1" value="b" /> Empty plastic water bottle</label>
+          <label><input type="radio" name="q1" value="c" /> Used paper towel</label>
+        </div>
+
+        <div class="quiz-question" data-answer="c">
+          <p>2. What’s the most sustainable option for drinks?</p>
+          <label><input type="radio" name="q2" value="a" /> Buying bottled water every day</label>
+          <label><input type="radio" name="q2" value="b" /> Using paper cups once</label>
+          <label><input type="radio" name="q2" value="c" /> Refilling a reusable bottle</label>
+        </div>
+
+        <div class="quiz-question" data-answer="a">
+          <p>3. What should you do if you’re unsure if something is recyclable?</p>
+          <label><input type="radio" name="q3" value="a" /> Check local guidelines or signage</label>
+          <label><input type="radio" name="q3" value="b" /> Throw it in recycling anyway</label>
+          <label><input type="radio" name="q3" value="c" /> Litter it outside</label>
+        </div>
+
+        <button id="submitQuiz" class="btn primary-btn">Check My Score</button>
+        <p id="quizResult" class="quiz-result"></p>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clean Our Community | Cleanup Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CleanOurCommunity</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html" class="active">Events</a>
+      <a href="tips.html">Tips</a>
+      <a href="map.html">Map</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="contact.html">Pledge</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      ☀️/🌙
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Upcoming Cleanup Events</h1>
+        <p>Choose a cleanup type and sign up to help restore our community spaces.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="filter-bar">
+        <label for="eventFilter">Filter by type:</label>
+        <select id="eventFilter">
+          <option value="all">All Events</option>
+          <option value="waterway">Waterway</option>
+          <option value="park">Park</option>
+          <option value="trail">Trail</option>
+        </select>
+      </div>
+
+      <div id="eventsList" class="events-grid">
+        <!-- JavaScript will inject event cards here -->
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>Why Your Participation Matters</h2>
+      <p>
+        Each cleanup event removes hundreds of pounds of trash from Monroe’s parks,
+        trails, and waterways. Volunteering even once a semester helps protect
+        wildlife, improve campus appearance, and build a stronger, more connected community.
+      </p>
+    </section>
+  </main>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

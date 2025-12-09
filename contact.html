@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clean Our Community | Pledge to Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CleanOurCommunity</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="tips.html">Tips</a>
+      <a href="map.html">Map</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="contact.html" class="active">Pledge</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      ☀️/🌙
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Pledge to Join a Cleanup</h1>
+        <p>Sign up to receive information about upcoming cleanups and sustainability actions.</p>
+      </div>
+    </section>
+
+    <div class="pledge_img">
+        <img src="/images/bayou-cleanup.png" alt="Bayou Cleanup" class="responsive-img" />
+    </div>
+
+    <section class="container section">
+        <form id="pledgeForm" class="form">
+            <label>
+            Name:
+            <input type="text" id="pledgeName" required />
+            </label>
+
+            <label>
+            Email:
+            <input type="email" id="pledgeEmail" required />
+            </label>
+
+            <fieldset>
+            <legend>What are you interested in?</legend>
+            <label><input type="checkbox" name="interest" value="waterway" /> Waterway cleanups</label>
+            <label><input type="checkbox" name="interest" value="park" /> Park cleanups</label>
+            <label><input type="checkbox" name="interest" value="trail" /> Trail cleanups</label>
+            <label><input type="checkbox" name="interest" value="education" /> Education & outreach</label>
+            </fieldset>
+
+            <label>
+            Message (optional):
+            <textarea id="pledgeMessageInput" rows="3"></textarea>
+            </label>
+
+            <button type="submit" class="btn primary-btn">Submit Pledge</button>
+        </form>
+
+        <div id="pledgeConfirmation" class="pledge-confirmation" aria-live="polite"></div>
+    </section>
+
+    <!-- Simple modal for extra “Wow” factor -->
+    <div id="pledgeModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h2>Thank You!</h2>
+        <p id="modalMessage">
+          <!-- JS will insert personalized text here -->
+        </p>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Clean Our Community | Map & Report Areas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">CleanOurCommunity</div>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="tips.html">Tips</a>
+      <a href="map.html" class="active">Map</a>
+      <a href="volunteers.html">Volunteers</a>
+      <a href="contact.html">Pledge</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+      ☀️/🌙
+    </button>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Map of Cleanup Focus Areas</h1>
+        <p>See where cleanups are happening and report locations that need attention.</p>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="two-column">
+        <div>
+          <h2>Community Focus Areas</h2>
+          <div class="map-placeholder">
+            <!-- Replace this with an actual image if you want -->
+            <p>Map Placeholder (Bayou Desiard, campus, parks)</p>
+            <div class="map-grid">
+              <button class="map-point" data-location="Bayou Desiard">Bayou Desiard</button>
+              <button class="map-point" data-location="ULM Campus Green">Campus Green</button>
+              <button class="map-point" data-location="Neighborhood Park">Neighborhood Park</button>
+            </div>
+          </div>
+          <p id="mapInfo" class="map-info">
+            Click a location to learn how litter affects that area.
+          </p>
+        </div>
+
+        <div>
+          <h2>Report a Polluted Area</h2>
+          <p>Notice a spot that needs cleanup? Report it so we can add it to future events.</p>
+          <form id="reportForm" class="form">
+            <label>
+              Location name:
+              <input type="text" id="reportLocation" required />
+            </label>
+            <label>
+              Description:
+              <textarea id="reportDescription" rows="3" required></textarea>
+            </label>
+            <button type="submit" class="btn primary-btn">Submit Report</button>
+          </form>
+
+          <h3>Reported Areas</h3>
+          <ul id="reportedList" class="reported-list">
+            <!-- JS will add reported areas here -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
